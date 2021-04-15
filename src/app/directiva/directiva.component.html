@@ -1,0 +1,10 @@
+<button type="button" (click)="Mostrar()" class='btn btn-primary my-2'>{{despliegue?"ocultar":"mostrar"}}</button>
+<div class='card'>
+    <div class='card-header'>
+        Listado de cursos
+    </div>
+    <ul class='list-group' *ngIf="despliegue==true">
+        <li class='class-group-item' *ngFor='let curso of listaCurso'>{{curso}}</li>
+    </ul>
+
+</div>
